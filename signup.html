@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>AgriAssist/SignUp</title>
+        <center><div><p><font face="comic sans ms" size="6" color="red"> Welcome to Hook-a-book!!!</font></p>
+           <p><font face="comic sans ms" size="5" color="white">connecting book users</font></p>
+            </div></center>
+    </head>
+	<style>
+tr:nth-child(even){
+background-color:slateblue;
+}
+tr:nth-child(odd){
+background-color:green;
+}
+td:hover{
+background-color:pink;
+font-weight:bold;
+}
+body{
+background-color:gray;
+}
+table{
+background-color:white;
+}
+</style>
+    <body>
+        <form action="signUptologin.html" method="POST" onsubmit="return checkForNull();">
+     <center>
+	 <h2><font color="red" face="comic sans ms" size="5"><b>SIGN UP</b></h2>
+	 <table> 
+			 
+			 <tr>
+			 <td><b>NAME:</b></td>
+			 <td><b><input type="text" name="name" id="name"  placeholder="max 25 characters" value="" size="15" onblur="FormValidation1()"/><div id="div1"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>PASSWORD:</b></td>
+			 <td><b><input type="password" name="pswd" pattern="[1-9]{1}[0-9]{5}"  placeholder="1-6 digits" id="pswd" onblur="FormValidation2()" value="" size="15" /><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>PHONE:</b></td>
+			 <td><b><input type="tel" name="phone" pattern="[1-9]{1}[0-9]{9}" placeholder="10 digits" id="phone" onblur="validate(this)" value="" size="15"/></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>ADDRESS:</b></td>
+			 <td><b><input type="text" name="address" placeholder="max 40 characters" id="address" onblur="FormValidation3()" value="" size="15"/><div id="div3"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>ROLE:</b></td>
+			 <td><b><select name="role" id ="role" value="stdent/teacher">
+                     <option>student</option>
+                     <option>teacher</option>
+                     </select><div id="div1"></div></b>
+			 </td>
+			 </tr>			 
+	 </table>
+			 <input type="submit" value="SUBMIT"  name="sbmt"/>
+			 <input type="reset"  value="RESET"/>
+    </center>
+	
+     </form>
+    </body>
+	
+	<script type="text/javascript">
+			function checkForNull()
+            {
+                if (document.getElementById('name').value==="" || document.getElementById('pswd').value===""||
+				document.getElementById('phone').value===""|| document.getElementById('address').value===""
+				|| document.getElementById('role').value==="" )
+   
+                {
+                    alert ("Blank fields not allowed");
+					return false;
+                }
+                return true;
+				
+            }
+			function checkForPhone()
+            {
+           
+			 var regex = /^[1-9]{1}[0-9]{9}$/;
+				var value = regex.test(document.getElementById("phone").value);
+				if (value===false) 
+				{
+			        alert("Enter 10 digits for phone number");
+					return false;        
+				} 
+				return true;        
+            }
+			function checkForPswd()
+            {
+           
+			 var regex = /^[1-9]{1}[0-9]{5}$/;
+				var value = regex.test(document.getElementById("pswd").value);
+				if (value===false) 
+				{
+			        alert("Enter 6 digits as password");
+					return false;        
+				} 
+				return true;        
+            }
+
+    </script>
+</html>
