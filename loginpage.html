@@ -6,31 +6,24 @@
 		<div class="logo">
 			<img id="header-img" src="C:\Users\Trivikram M R\OneDrive\Desktop\hook a book.png" alt="Hook-a-book"  />
 		</div>
-
-		<nav id="nav-bar">
-			<ul>
-				<li><t><t><t><t><t><t><t><t><a class="nav-link" href="Home.php">Home</t></t></t></t></t></t></t></t></a></li>
-				<li><t><t><t><t><t><t><t><t><a class="nav-link" href="SignUp.php">Sign Up</a></li>
-
-			</ul>
-		</nav>
 	</header>
 </Head>
 <style>
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
 
 header{
-    margin-left: 700;
+    margin-left: 650;
 }
 #loginPg{
-	 display: flex;
+	 display:legacy;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 30px;
   
-  margin-top: 60px;
-	padding-top:85px;
+  margin-top: 20px;
+	padding-top:55px;
 }
 
 #btn {
@@ -48,13 +41,13 @@ border-radius: 15px 50px;
 	color:white;
 }
 input{
-color:black;
-width:100px;
+color:rgb(0, 0, 0);
+width:150px;
 border-radius:10%;
-background-color:yellowgreen;
+background-color:violet;
 }
 #btn:hover {
-  background-color: yellowgreen;
+  background-color: violet;
   transition: background-color 1s;
 }
 #pswd{
@@ -81,7 +74,7 @@ tr:nth-child(odd){
 background-color:violet;
 }
 td:hover{
-background-color:yellowgreen;
+background-color:violet;
 
 }
 body{
@@ -105,12 +98,12 @@ h3{
 	<div id="loginPg">
 	<form action="loginauth.html" method="POST" onsubmit="return checkForNull()";>
      <center>
-	         <h3><b>LOGIN</b></h3>
+	         <h1><b>LOGIN</b></h1>
 			 <table>
 			  
 			 <tr>
 			 <td><b>LOGIN ID:</b></td>
-			 <td><b><input type="text" name="usrnm" id="usrnm"  value="" size="20""/><div id="div1"></div></b></td>
+			 <td><b><input type="text" name="usrnm" id="usrnm"  value="" size="20"><div id="div1"></div></b></td>
 			 </tr>
 			 
 			 <tr>
@@ -130,6 +123,7 @@ h3{
 			 <br><br>
              <input type="submit" value="SUBMIT" name="sbmt" id="btn"/><br>
 			 <p><i>New User? Please  <b>SIGN UP </b></a> First</i></font></p>
+             <li><a class="nav-link" href="SignUp.php">Sign Up</a></li>
 			 
 			
 			</section>
