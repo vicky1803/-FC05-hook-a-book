@@ -1,0 +1,48 @@
+<html>
+<Head>
+	<Title>  ADD YOUR BOOK TO LIBRARY  </Title>
+</Head>
+
+<Body>
+	
+	<h1><center>Welcome to Hook a Book</center></h1>
+	
+	<form action="addbook2.php" method="POST">
+     <center>
+			 <table>
+			 <th><font color="red" face="comic sans ms" size="5"><b>Enter details for the new book:</b></th> 
+			 
+			 <tr>
+			 <td><b>book Name:</b></td>
+			 <td><b><input type="text"  placeholder="" required="required" name="prod_name" id='prod_name' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 
+			 
+			 <tr>
+			 <td><b>Rent price (Max 500 price):</b></td>
+			 <td><b><input  type="number" min="0" max="500" placeholder="" required="required" name="rate" id='rate' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 
+			 <tr>
+			 <td><b>Genre:</b></td>
+			 <td><b><select name="category" required="required"  value="">
+                     <option></option>
+                     <option>Romance</option>
+                     <option>Action</option>
+                     <option>Thriller</option>
+                     <option>Suspense</option>
+                     <option>Engg</option>
+                     <option>medical</option>
+                     <option>Competitive exams</option>
+                     </select><div id="div1"></div></b>
+			 </td>
+			 </tr>
+			 </table>
+             <input type="submit" value="SUBMIT" name="sbmt"/><br>
+    <br/>
+	</form>
+	
+</Body>
+</html>
