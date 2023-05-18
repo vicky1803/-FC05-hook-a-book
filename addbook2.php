@@ -9,9 +9,9 @@
 
 		<nav id="nav-bar">
 							
-			<a class="nav-link" href="#features"><i><b>Connecting farmers and consumers</b></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="nav-link" href="#features"><i><b>Connecting BOOK RENTERS AND SHARERS</b></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
 				<a class="nav-link" href="Home1.php">Home Page</a>&nbsp;&nbsp;&nbsp;&nbsp;
-				<a class="nav-link" href="FarmerDashboard.php">Dashboard</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				
 				<a class="nav-link" href="SignOut.php">Sign Out</a>
 			
 		</nav>
@@ -150,14 +150,14 @@ if(isset($_POST['sbmt']))
   }
 	 }
 	 //$id=generateRandom();
-  $query="insert into products(prod_id,farmer_id,cat_id,prod_name,stk_qty,rate,variety) values('$prod_id','$farmer_id','$cat_id','$prod_name','$stk_qty','$rate','$variety')";
+  $query="insert into products(prod_id,farmer_id,cat_id,prod_name,stk_qty,rate,variety) values('$prod_id','$user_id','$cat_id','$book_name','$Rent_price','$Genre')";
   if (mysqli_query($con,$query))
   {
 	  echo "<h1>Crop added successfully!</h1>";
   }
   else
   {
-	  $link2='AddCrop.php';
+	  $link2='addbook1.php';
 	  echo "<h1>Oops!There was some error.....Please Try Again!</h1>";
 	  echo '<a href="'.$link2.'">TRY AGAIN</a><br><br>';
   }
