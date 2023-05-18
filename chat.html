@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Share App - Chat</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Book Share App - Chat</h2>
+        
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Display chat messages here -->
+            </div>
+            
+            <form class="chat-form" method="post" action="send_message.php">
+                <input type="text" name="message" placeholder="Type your message">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to fetch and display chat messages
+        function fetchMessages() {
+            $.ajax({
+                url: 'get_messages.php',
+                method: 'GET',
+                success: function(data) {
+                    $('#chat-messages').html(data);
+                }
+            });
+        }
+        
+        // Periodically refresh chat messages
+        setInterval(fetchMessages, 2000);
+    </script>
+</body>
+</html>
