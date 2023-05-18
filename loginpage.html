@@ -1,0 +1,168 @@
+<html>
+<Head>
+<link rel="stylesheet" type="text/css" href="Home1.css">
+	<Title>  Hook-a-book/Login  </Title>
+	<header id="header">
+		<div class="logo">
+			<img id="header-img" src="C:\Users\Trivikram M R\OneDrive\Desktop\hook a book.png" alt="Hook-a-book"  />
+		</div>
+
+		<nav id="nav-bar">
+			<ul>
+				<li><t><t><t><t><t><t><t><t><a class="nav-link" href="Home.php">Home</t></t></t></t></t></t></t></t></a></li>
+				<li><t><t><t><t><t><t><t><t><a class="nav-link" href="SignUp.php">Sign Up</a></li>
+
+			</ul>
+		</nav>
+	</header>
+</Head>
+<style>
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+header{
+    margin-left: 700;
+}
+#loginPg{
+	 display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  margin-top: 60px;
+	padding-top:85px;
+}
+
+#btn {
+	width: 120px;
+
+  height: 40px;
+  font-size: 0.85em;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+  padding: 8px;
+border-radius: 15px 50px;
+  background: green;
+  cursor: pointer;
+	color:white;
+}
+input{
+color:black;
+width:100px;
+border-radius:10%;
+background-color:yellowgreen;
+}
+#btn:hover {
+  background-color: yellowgreen;
+  transition: background-color 1s;
+}
+#pswd{
+
+background-color:whitesmoke;
+border-radius: 15px 50px;
+border:2px solid green;
+}	
+#usrnm{
+background-color:whitesmoke;
+border-radius: 15px 50px;
+border:2px solid green;
+}	
+
+#role{
+background-color:whitesmoke;
+border-radius: 15px 50px;
+border:2px solid green;
+}	
+tr:nth-child(even){
+background-color:violet;
+}
+tr:nth-child(odd){
+background-color:violet;
+}
+td:hover{
+background-color:yellowgreen;
+
+}
+body{
+
+background-color:violet;
+}
+table{
+background-color:violet;
+}
+h3{
+	color:green;
+}
+#sbtn{
+	color: green;
+  transition:background-color 1s;
+  font-weight:bold;
+ }
+</style>
+<Body>
+	<section id="about">
+	<div id="loginPg">
+	<form action="loginauth.html" method="POST" onsubmit="return checkForNull()";>
+     <center>
+	         <h3><b>LOGIN</b></h3>
+			 <table>
+			  
+			 <tr>
+			 <td><b>LOGIN ID:</b></td>
+			 <td><b><input type="text" name="usrnm" id="usrnm"  value="" size="20""/><div id="div1"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>PASSWORD:</b></td>
+			 <td><b><input type="password" type="text"  name="pswd" id='pswd' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 </tr>
+			 
+			 <tr>
+			 <td><b>LOGIN AS:</b></td>
+			 <td><b><select name="student" id="role"  value="">
+                     <option>student</option>
+                     <option>teacher</option>
+                     </select><div id="div1"></div></b>
+			 </td>
+			 </tr>
+			 </table>
+			 <br><br>
+             <input type="submit" value="SUBMIT" name="sbmt" id="btn"/><br>
+			 <p><i>New User? Please  <b>SIGN UP </b></a> First</i></font></p>
+			 
+			
+			</section>
+    <br/>
+	</form>
+	</div>
+	<script type="text/javascript">
+			function checkForNull()
+            {
+                if (document.getElementById('usrnm').value==="" || document.getElementById('pswd').value===""||
+		            document.getElementById('role').value==="" )
+   
+                {
+                    alert ("Blank fields not allowed");
+					return false;
+                }
+                return true;
+				
+            }
+			function checkForPswd()
+            {
+           
+			 var regex = Text;
+				var value = regex.test(document.getElementById("pswd").value);
+				if (value===false) 
+				{
+			        alert("Enter password");
+					return false;        
+				} 
+				return true;        
+            }
+
+    </script>
+	</section>
+</Body>
+</html>
