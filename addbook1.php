@@ -102,7 +102,7 @@ padding:10px;
 </style>
 <Body>
 
-	<h1><center>Welcome to AgriAssist</center></h1>
+	<h1><center>Welcome to hook a book </center></h1>
 	
 	<form action="addbook2.php" method="POST">
      <center>
