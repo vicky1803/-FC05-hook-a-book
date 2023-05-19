@@ -1,29 +1,35 @@
 <html>
 <Head>
-<link rel="stylesheet" type="text/css" href="Home1.css">
-	<Title>  Hook-a-book/Login  </Title>
+<link rel="stylesheet" type="text/css" href="home1.css">
+	<Title> Hook-a-Book/Login  </Title>
 	<header id="header">
 		<div class="logo">
-			<img id="header-img" src="C:\Users\Trivikram M R\OneDrive\Desktop\hook a book.png" alt="Hook-a-book"  />
+			<img id="header-img" src="hook a book.png" alt="Hook-a-Book Logo" />
 		</div>
+
+		<nav id="nav-bar">
+			<ul>
+				
+				<li><a class="nav-link" href="#features"><i><b>Connecting book users</b></i></a></li>
+				
+				<li><a class="nav-link" href="home.html">Home</a></li>
+				<li><a class="nav-link" href="signup.html">Sign Up</a></li>
+
+			</ul>
+		</nav>
 	</header>
 </Head>
 <style>
 @import "https://fonts.googleapis.com/css?family=Lato:400,700";
-
-header{
-    margin-left: 650;
-}
 #loginPg{
-	 display:legacy;
+	 display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 30px;
   
-  margin-top: 20px;
-	padding-top:55px;
+  margin-top: 60px;
+	padding-top:85px;
 }
 
 #btn {
@@ -41,13 +47,13 @@ border-radius: 15px 50px;
 	color:white;
 }
 input{
-color:rgb(0, 0, 0);
-width:150px;
+color:black;
+width:100px;
 border-radius:10%;
-background-color:violet;
+background-color:yellowgreen;
 }
 #btn:hover {
-  background-color: violet;
+  background-color: yellowgreen;
   transition: background-color 1s;
 }
 #pswd{
@@ -68,21 +74,21 @@ border-radius: 15px 50px;
 border:2px solid green;
 }	
 tr:nth-child(even){
-background-color:violet;
+background-color:sugarcane;
 }
 tr:nth-child(odd){
-background-color:violet;
+background-color:sugarcane;
 }
 td:hover{
-background-color:violet;
+background-color:yellowgreen;
 
 }
 body{
 
-background-color:violet;
+background-color:sugarcane;
 }
 table{
-background-color:violet;
+background-color:sugarcane;
 }
 h3{
 	color:green;
@@ -98,22 +104,22 @@ h3{
 	<div id="loginPg">
 	<form action="loginauth.html" method="POST" onsubmit="return checkForNull()";>
      <center>
-	         <h1><b>LOGIN</b></h1>
+	         <h3><b>LOGIN</b></h3>
 			 <table>
 			  
 			 <tr>
 			 <td><b>LOGIN ID:</b></td>
-			 <td><b><input type="text" name="usrnm" id="usrnm"  value="" size="20"><div id="div1"></div></b></td>
+			 <td><b><input type="text" name="usrnm" id="usrnm" value="" size="15"/><div id="div1"></div></b></td>
 			 </tr>
 			 
 			 <tr>
 			 <td><b>PASSWORD:</b></td>
-			 <td><b><input type="password" type="text"  name="pswd" id='pswd' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
+			 <td><b><input type="password" type="number" pattern="[1-9]{1}[0-9]{5}" placeholder="1-6 digits" name="pswd" id='pswd' value="" size="15" onblur="FormValidation2()"/><div id="div2"></div></b></td>
 			 </tr>
 			 
 			 <tr>
 			 <td><b>LOGIN AS:</b></td>
-			 <td><b><select name="student" id="role"  value="">
+			 <td><b><select name="role" id="role"  value="">
                      <option>student</option>
                      <option>teacher</option>
                      </select><div id="div1"></div></b>
@@ -123,7 +129,7 @@ h3{
 			 <br><br>
              <input type="submit" value="SUBMIT" name="sbmt" id="btn"/><br>
 			 <p><i>New User? Please  <b>SIGN UP </b></a> First</i></font></p>
-             <li><a class="nav-link" href="SignUp.php">Sign Up</a></li>
+			 <li><a class="nav-link" href="signup.html">Sign Up</a></li>
 			 
 			
 			</section>
@@ -146,14 +152,15 @@ h3{
 			function checkForPswd()
             {
            
-			 var regex = Text;
+			 var regex = /^[1-9]{1}[0-9]{5}$/;
 				var value = regex.test(document.getElementById("pswd").value);
 				if (value===false) 
 				{
-			        alert("Enter password");
+			        alert("Enter 6 didts as password");
 					return false;        
 				} 
-				return true;        
+				
+				return true;
             }
 
     </script>
