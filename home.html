@@ -1,9 +1,9 @@
-<link rel="stylesheet" type="text/css" href="Home1.css">
+<link rel="stylesheet" type="text/css" href="home1.css">
 
 <div id="page-wrapper">
 	<header id="header">
 		<div class="logo">
-			<img id="header-img" src="C:\Users\Trivikram M R\OneDrive\Desktop\hook a book.png" alt="Hook-a-book" />
+			<img id="header-img" src="hook a book.png" alt="Hook-a-book" />
 		</div>
 
 		<nav id="nav-bar">
@@ -11,8 +11,7 @@
 				<li><a class="nav-link" href="#about">About Us</a></li>
 				<li><a class="nav-link" href="#features">Our Promise</a></li>
 				<li><a class="nav-link" href="#services">Our Services</a></li>
-				<li><a class="nav-link" href="#how-it-works">Get In Touch</a></li>
-				<li><a class="nav-link" href="Login.php">Login</a></li>
+				<li><a class="nav-link" href="loginpage.html">Login</a></li>
 
 			</ul>
 		</nav>
@@ -22,32 +21,12 @@
 
 	<section id="about">
 
-		<h1>Bridging the Gap between the Farmer and Consumer</h1>
+		<h1>Bridging the Gap between the book lover and book</h1>
 		
 		<h4>Hook-a-book is a revolutionary app designed for book lovers, avid readers, and knowledge seekers who crave access to a vast collection of books at their fingertips. Whether you're a student, professional, or simply someone with a passion for reading, BookShare is your gateway to a world of literary treasures.</h4>
-	 <button id="submit" onclick="window.location.href = 'SignUp.php';">Register Now</button>
+	 <button id="submit" onclick="window.location.href = 'signUp.html';">Register Now</button>
 	</section>
-<div class="slideshow-container">
 
-<div class="mySlides fade">
-  
-  <img src="images/slideshow3.png" style="height:500px;width:100%;">
-
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="images/slideshow2.png" style="height:500px;width:100%;">
-
-</div>
-
-<div class="mySlides fade">
-  
-  <img src="images/slideshow1.png" style="height:500px;width:100%;">
-
-</div>
-
-</div>
 <br>
 
 <div style="text-align:center" id="slide_dot">
@@ -56,48 +35,27 @@
   <span class="dot"></span> 
 </div>
 
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
-}
-</script>
 <section id="features">
     <center>
-    <p id ="ProbSt">The AgriAssist web portal system provides an intermediate interface between the farmer and the buyer, eliminating the need for middlemen and brokers. The system enables farmers to quote the price they desire for their produce while the buyer gets to compare and purchase yield from the listed commodities, hence providing a transparent medium during transactions.</p>
+    <p id ="ProbSt"> With BookShare, you can browse, discover, and devour a diverse range of books across multiple genres, from timeless classics to contemporary bestsellers. Experience the joy of reading anytime, anywhere, as this app offers a seamless reading experience on your favorite devices, including smartphones, tablets, and e-readers.</p>
 	</center>
 	<div class="container">
 		
 			<div class="grid">
 				<div class="icon"><i class="fa fa-3x fa-fire"></i></div>
 				<div class="desc">
-					<h2>Best Quality Produce</h2>
+					<h2>one stop destination for all books</h2>
 					<p>
-						We only source the Best Quality of crops, grains and vegetables from the farmers. All the produce is organic and rich in minerals. Hence ensuring only the most healthy of produce, rich in essential nutrients are sold.
+						Gain unlimited access to a comprehensive library of books encompassing various genres, including fiction, non-fiction, romance, mystery, science fiction, self-help, biographies, and more. Discover hidden gems and explore new literary worlds.
 					</p>
 				</div>
 			</div>
 			<div class="grid">
 				<div class="icon"><i class="fa fa-3x fa-truck"></i></div>
 				<div class="desc">
-					<h2>Eliminating Middlemen</h2>
+					<h2>Personalized Recommendations</h2>
 					<p>
-We ensure Direct Marketing of the farmers produce to the consumer to ensure only fresh crops are sold at a reasonable rate. This benifits both farmer and consumer.
+						Hook-a-Book understands your reading preferences and tailors its recommendations based on your interests, previously read books, and user ratings. Find your next great read effortlessly and never miss out on books you'll love.
 					</p>
 				</div>
 			</div>
@@ -108,7 +66,7 @@ We ensure Direct Marketing of the farmers produce to the consumer to ensure only
 				<div class="desc">
 					<h2>User Satisfaction</h2>
 					<p>
-						We hold User satisaction of both the Farmer and the Consumer to the highest regard. We strive to ensure this by providing a fair interface for the farmer to list crops and the consumer the option to select the right produce.
+						Create personalized bookshelves to organize your virtual library, enabling you to categorize and easily access your favorite books, currently reading titles, and future reading lists.
 
 					</p>
 				</div>
@@ -118,70 +76,40 @@ We ensure Direct Marketing of the farmers produce to the consumer to ensure only
 		<br><br>
 		<section id="pricing">
 			<div class="product" id="tenor">
-				<div class="level">Farmer Portal</div>
-				<h5></i>User-Friendly Platform for Listing Produce.</i></h5>
+				<div class="level">student Portal</div>
+				<h5></i>User-Friendly Platform for searching books.</i></h5>
 				<ol>
-					<li>List Crop Name, Quantity & Price.</li>
-					<li>Dashboard to view Inventory.</li>
-					<li>Easily add, update or remove listing.</li>
-					<li>Wallet to keep track of Payments made.</li>
+					<li>search book Name, type & Price.</li>
+					<li>Dashboard to library</li>
+					<li>Easily search the book even in users blockchain</li>
+					<li>safe data base of users</li>
 				</ol>
-				<button class="btn" onclick="window.location.href = 'Login.php';">Login</button>
+				<button class="btn" onclick="window.location.href = 'loginpage.html';">Login</button>
 			</div>
 			<div class="product" id="bass">
 				<div class="level">Portal Overview </div>
-				<h5><i>Connecting the consumer directly to farmers</i></h5>
+				<h5><i>Connecting the booklovers to book</i></h5>
 				<ol>
 					<li>Transparency and Unbiased interface medium</li>
 					<li>Easy to use for all user</li>
-					<li>Vigilant Regulation</li>
-					<li>Secure and Effective Wallet Implementation</li>
-				</ol><button class="btn" onclick="window.location.href = 'SignUp.php';">Join Us</button>
+					<li>separate portal  for teachers and students</li>
+					<li>Secure and Effective user interface Implementation</li>
+				</ol><button class="btn" onclick="window.location.href = 'SignUp.html';">Join Us</button>
 			</div>
 			<div class="product" id="valve">
-				<div class="level">Buyer Portal</div>
-				<h5><i>Regulating AgriAssist at District Level</i></h5>
+				<div class="level">teachers Portal</div>
+				<h5><i>User-Friendly Platform for searching books</i></h5>
 				<ol>
-					<li>Reasonable Rates for fresh produce</li>
-					<li>Fair price listing to promote farmer welfare</li>
-					<li>Effecient listing of Produce</li>
-					<li>Easy payment interface</li>
+					<li>search book Name, type & Price.</li>
+					<li>Dashboard to library</li>
+					<li>Easily search the book even in users blockchain</li>
+					<li>safe data base of userssafe data base of users</li>
 				</ol>
-				<button class="btn" onclick="window.location.href = 'Login.php';">Login</button>
+				<button class="btn" onclick="window.location.href = 'loginpage.html';">Login</button>
 			</div>
 		</section>
 		</div>
 		<section id="how-it-works">
 		<div class="product" id="tenor">
-				<div class="level">Address</div>
 				
-				<ol>
-			Post Box No. 7087,<br>
-12th Main Road, 27th Cross,<br>
-Banashankari II Stage,<br>
-Bangalore – 560 070.
-				</ol>
-				
-			</div>
-			<div class="product" id="bass">
-				<div class="level">Phone Number </div>
-				
-				<ol>
-					Varun : 8105573177<br>
-Naman : 7985199972
-				</ol>
-			</div>
-			<div class="product" id="valve">
-				<div class="level">Email</div>
-				
-				<ol>
-					agriassist@bnmit.in<br>
-					naman786sinha@gmail.com<br>
-					varunpkashyap98@gmail.com
-				</ol>
-				
-			</div>
-			
-			
-			
 		</section>
